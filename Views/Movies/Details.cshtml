@@ -1,0 +1,71 @@
+
+@model MvcMovie.Models.Movie
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<h1>Movie Details</h1>
+
+<h4>Movie Information</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="p-3 border rounded">
+
+            <dl class="row mb-0">
+
+                <dt class="col-sm-4 mb-3">
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd class="col-sm-8 mb-3">
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+
+                <dt class="col-sm-4 mb-3">
+                    @Html.DisplayNameFor(model => model.ReleaseDate)
+                </dt>
+                <dd class="col-sm-8 mb-3">
+                    @Html.DisplayFor(model => model.ReleaseDate)
+                </dd>
+
+                <dt class="col-sm-4 mb-3">
+                    @Html.DisplayNameFor(model => model.Genre)
+                </dt>
+                <dd class="col-sm-8 mb-3">
+                    @Html.DisplayFor(model => model.Genre)
+                </dd>
+
+                <dt class="col-sm-4 mb-3">
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+                <dd class="col-sm-8 mb-3">
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+                <dt class="col-sm-4 mb-3">
+                    @Html.DisplayNameFor(model => model.Rating)
+                </dt>
+                <dd class="col-sm-8 mb-3">
+                    @Html.DisplayFor(model => model.Rating)
+                </dd>
+
+            </dl>
+
+        </div>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Edit"
+       asp-route-id="@Model?.Id"
+       class="btn btn-primary px-4 py-2">
+        Edit Movie
+    </a>
+
+    <a asp-action="Index"
+       class="btn btn-secondary px-4 py-2">
+        Back to List
+    </a>
+</div>

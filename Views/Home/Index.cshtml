@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">
+            Welcome to Flores Movies
+        </h1>
+
+        <p class="lead text-muted mt-3">
+            Explore my favorite movies, discover great stories,
+            and find movies by title, genre, or release year.
+        </p>
+
+        <a asp-controller="Movies"
+           asp-action="Index"
+           class="btn btn-primary btn-lg px-4 py-2 mt-3">
+            Browse My Movies
+        </a>
+    </div>
+
+    <div class="row justify-content-center g-4">
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <h4 class="card-title">Coco</h4>
+                    <p class="text-muted">2017</p>
+                    <p class="card-text">
+                        A heartwarming animated movie about
+                        family, music, and remembering loved ones.
+                    </p>
+                    <span class="badge bg-primary">PG</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <h4 class="card-title">Apollo 13</h4>
+                    <p class="text-muted">1995</p>
+                    <p class="card-text">
+                        An inspiring story about teamwork,
+                        problem-solving, and overcoming challenges.
+                    </p>
+                    <span class="badge bg-primary">PG</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <h4 class="card-title">The Lion King</h4>
+                    <p class="text-muted">1994</p>
+                    <p class="card-text">
+                        An animated classic about family,
+                        courage, responsibility, and friendship.
+                    </p>
+                    <span class="badge bg-primary">G</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <h3>Find Your Next Favorite Movie</h3>
+
+        <p class="text-muted">
+            Search by title, filter by genre, or discover
+            movies released in a specific year or newer.
+        </p>
+
+        <a asp-controller="Movies"
+           asp-action="Index"
+           class="btn btn-outline-primary px-4 py-2">
+            View Movie Collection
+        </a>
+    </div>
+
+</div>
